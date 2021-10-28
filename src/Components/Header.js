@@ -13,6 +13,9 @@ const Header = () => {
                 <h3>Genres</h3>
                 <h3>Trending</h3>
             </div>
+            <div className="sign-in">
+                <button>Sign In</button>
+            </div>
         </div>
     )
 }
