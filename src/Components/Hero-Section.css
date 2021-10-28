@@ -1,0 +1,7 @@
+.hero-section {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/movies_background.png);
+    opacity: .45;
+    
+}
