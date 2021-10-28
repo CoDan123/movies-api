@@ -1,9 +1,10 @@
 import React from "react";
+import logo from "../Images/movies_background.png";
 
 const HeroSection = () => {
     return (
-        <div>
-
+        <div className="hero-section">
+            <img src={logo}/>
         </div>
     )
 }
