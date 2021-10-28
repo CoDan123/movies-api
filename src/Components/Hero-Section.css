@@ -1,7 +1,25 @@
-.hero-section {
+
+.hero-image {
     height: 100vh;
     width: 100%;
     background-image: url(../Images/movies_background.png);
+    z-index: -5;
     opacity: .45;
-    
 }
+
+.search-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: transparent;
+    top: 45vh;
+    width: 40vw;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+}
+
