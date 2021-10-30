@@ -7,12 +7,14 @@ const HeroSection = () => {
         <div className="background">
             <div className="hero-image">
             </div>
-            <div className="search-box">
-                <h1>Find your favorite movies, TV shows and more.</h1>
-                <form>
-                    <input type="text" />
-                    <button>Search</button>
-                </form>
+            <div className="hero-search-overlay">
+                <div className="search-box">
+                    <h1><span>Find your favorite movies, TV shows and more.</span></h1>
+                    <form>
+                        <input type="text" />
+                        <button>Search</button>
+                    </form>
+                </div>
             </div>
         </div>
     )
