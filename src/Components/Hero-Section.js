@@ -11,7 +11,7 @@ const HeroSection = () => {
                 <div className="search-box">
                     <h1>Find your favorite movies, TV shows and more.</h1>
                     <form>
-                        <input type="text" />
+                        <input type="text" placeholder="Search here..." />
                         <button>Search</button>
                     </form>
                 </div>
