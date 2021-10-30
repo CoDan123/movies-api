@@ -46,10 +46,14 @@
 }
 
 .search-box input {
-    height: 45px;
+    height: 43px;
     width: 75%;
+    outline: 1px solid #fff;
     border: none;
     border-radius: 3px 3px 3px 3px;
+}
+.search-box input:focus {
+    outline: 1px solid #e50913;
 }
 
 .search-box button {
@@ -57,11 +61,12 @@
     height: 47px;
     width: max-content;
     border: none;
-    margin-left: 2px;
+    margin-left: 3px;
     border-radius: 3px 3px 3px 3px ;
     background-color: #e50913;
     color: #fff;
     font-size: 25px;
     font-weight: 650;
 }
+
 
