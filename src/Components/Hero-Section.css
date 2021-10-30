@@ -34,6 +34,34 @@
 }
 
 .search-box h1 {
-    margin: 0 0 0 0 ;
+    margin: 0 0 0 0;
+}
+
+.search-box form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.search-box input {
+    height: 45px;
+    width: 75%;
+    border: none;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.search-box button {
+    flex-grow: 1;
+    height: 47px;
+    width: max-content;
+    border: none;
+    margin-left: 3px;
+    border-radius: 3px 3px 3px 3px ;
+    background-color: #e50913;
+    color: #fff;
+    font-size: large;
+    font-weight: 650;
 }
 

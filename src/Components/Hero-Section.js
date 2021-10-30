@@ -9,7 +9,7 @@ const HeroSection = () => {
             </div>
             <div className="hero-search-overlay">
                 <div className="search-box">
-                    <h1><span>Find your favorite movies, TV shows and more.</span></h1>
+                    <h1>Find your favorite movies, TV shows and more.</h1>
                     <form>
                         <input type="text" />
                         <button>Search</button>
