@@ -57,11 +57,11 @@
     height: 47px;
     width: max-content;
     border: none;
-    margin-left: 3px;
+    margin-left: 2px;
     border-radius: 3px 3px 3px 3px ;
     background-color: #e50913;
     color: #fff;
-    font-size: large;
+    font-size: 25px;
     font-weight: 650;
 }
 
