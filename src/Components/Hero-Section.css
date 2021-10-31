@@ -85,4 +85,8 @@
     font-weight: 650;
 }
 
+.search-box button:hover {
+    cursor: pointer;
+}
+
 
