@@ -16,13 +16,13 @@
 }
 
 .top-gradient {
-    height: 20vh;
+    height: 7vh;
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     
 }
 
 .bottom-gradient {
-    height: 20vh;
+    height: 7vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 

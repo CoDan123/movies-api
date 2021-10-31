@@ -14,8 +14,10 @@ const Header = () => {
                 <h3>Trending</h3>
             </div>
             <div className="sign-in">
-                <button>Sign In</button>
+                <button className="sign-in-button">Sign In</button>
+                <button className="options-button">Options</button>
             </div>
+            
         </div>
     )
 }
