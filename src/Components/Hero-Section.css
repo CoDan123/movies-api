@@ -4,12 +4,26 @@
 }
 
 .hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
     filter: brightness(.5);
     width: 100%;
     height: 100%;
     background-image: url('../Images/movies_background.png');
     z-index: -5;
+}
+
+.top-gradient {
+    height: 10vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    
+}
+
+.bottom-gradient {
+    height: 15vh;
+    background-image: linear-gradient(yellow, red);
 }
 
 .hero-search-overlay {

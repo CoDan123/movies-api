@@ -6,6 +6,8 @@ const HeroSection = (props) => {
     return (
         <div className="background">
             <div className="hero-image">
+                <div className="top-gradient"></div>
+                <div className="bottom-gradient"></div>
             </div>
             <div className="hero-search-overlay">
                 <div className="search-box">
