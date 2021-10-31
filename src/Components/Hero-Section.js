@@ -2,7 +2,7 @@ import React from "react";
 import './Hero-Section.css';
 import logo from "../Images/movies_background.png";
 
-const HeroSection = (props) => {
+const HeroSection = () => {
     return (
         <div className="background">
             <div className="hero-image">
@@ -14,7 +14,7 @@ const HeroSection = (props) => {
                     <h1>Find your favorite movies, TV shows and more.</h1>
                     <form>
                         <input  type="text" placeholder="Search here..." />
-                        <button onClick={props.getMovies}>Search</button>
+                        <button>Search</button>
                     </form>
                 </div>
             </div>

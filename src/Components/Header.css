@@ -50,6 +50,10 @@
 }
 
 .options-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     color: #fff;
     height: 2.5rem;
     width: 6rem;
@@ -58,3 +62,10 @@
     border-radius: 4px;
     font-size: 120%;
 }
+
+.fa-sort-down {
+    height: 30px;
+    margin-top: 0;
+    margin-left: 3px;
+}
+
