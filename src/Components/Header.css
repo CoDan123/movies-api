@@ -19,6 +19,10 @@
     font-weight: 400;
 }
 
+.fa-film {
+    color: #e50914ab;
+}
+
 .navigation {
     display: flex;
     flex-direction: row;
