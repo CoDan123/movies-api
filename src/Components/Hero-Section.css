@@ -16,14 +16,14 @@
 }
 
 .top-gradient {
-    height: 10vh;
+    height: 20vh;
     background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     
 }
 
 .bottom-gradient {
-    height: 15vh;
-    background-image: linear-gradient(yellow, red);
+    height: 20vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
 }
 
 .hero-search-overlay {
