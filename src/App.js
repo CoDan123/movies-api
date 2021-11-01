@@ -11,15 +11,15 @@ import Movie from './Components/Movie';
   const SEARCH_API = 'https://api.themoviedb.org/3/search/company?api_key=087e6e53b047b687bcd13eb7475121ab&page=1&query='
 
   function App() {
-    // const [movies, setMovies] = useState([]);
-    // const [search, setSearch] = useState('');
-    // const [query, setQuery] = useState('');
+    const [movies, setMovies] = useState([]);
+    const [search, setSearch] = useState('');
+    const [query, setQuery] = useState('');
 
-    // const getMovies = async () => {
-    //     const response = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=087e6e53b047b687bcd13eb7475121ab&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate');
-    //     const data = response.json();
-    //     console.log(data);
-    // }
+    const getMovies = async () => {
+        const response = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=087e6e53b047b687bcd13eb7475121ab&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate');
+        const data = response.json();
+        console.log(data);
+    }
 
     
   
