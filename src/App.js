@@ -15,19 +15,27 @@ import Movie from './Components/Movie';
     const [search, setSearch] = useState('');
     const [query, setQuery] = useState('');
 
-    const getMovies = async () => {
-        const response = await fetch('https://api.themoviedb.org/3/discover/movie?api_key=087e6e53b047b687bcd13eb7475121ab&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate');
-        const data = response.json();
-        console.log(data);
+    const getMovies = async (e) => {
+        e.preventDefault();
+        const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${search}`);
+        const data = await response.json();
+        setMovies(data.results);
+        console.log(data)
     }
 
-    
+    const updateSearch = (e) => {
+      setSearch(e.target.value);
+    }
   
 
   return (
     <div className="App">
-      <Header/>
-      <HeroSection/>
+      <Header />
+      {movies.length === 0 ?
+       <HeroSection search={search}
+        updateSearch={updateSearch} 
+        getMovies={getMovies}/>
+       : <Movie />}
       <Footer/>
     </div>
   );
