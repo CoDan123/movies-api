@@ -15,28 +15,48 @@ import Movie from './Components/Movie';
     const [search, setSearch] = useState('');
     const [query, setQuery] = useState('');
 
-    const getMovies = async (e) => {
-        e.preventDefault();
-        const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${search}`);
-        const data = await response.json();
-        setMovies(data.results);
-        console.log(data)
-    }
+   
 
-    const updateSearch = (e) => {
-      setSearch(e.target.value);
-    }
+    // const getMovies = async () => {
+    //     const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${search}`);
+    //     const data = await response.json();
+    //     setMovies(data.results);
+    // }
+
+    // const updateSearch = (e) => {
+    //   setSearch(e.target.value);
+    // }
+
+    // const getSearch = (e) => {
+    //   e.preventdefault();
+    //   setQuery(search);
+    //   setSearch('');
+    // }
   
 
   return (
     <div className="App">
+      
       <Header />
-      {movies.length === 0 ?
-       <HeroSection search={search}
-        updateSearch={updateSearch} 
-        getMovies={getMovies}/>
-       : <Movie />}
+      <HeroSection 
+       
+       />
+      {/* {movies.length === 0 ?
+       <HeroSection 
+       search={search}
+       updateSearch={updateSearch} 
+       getMovies={getMovies}
+       />
+       : movies.map(result => (
+       <Movie 
+        key={result.results.id} 
+        title={result.results.title}
+        rating={result.results.vote_average}
+        />
+        ))
+      } */}
       <Footer/>
+     
     </div>
   );
 }
