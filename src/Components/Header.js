@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 
-const Header = () => {
+const Header = (props) => {
     return (
         <div className='header-section'>
             <div className="logo-container">
@@ -11,7 +11,7 @@ const Header = () => {
                 <h3>Movies</h3>
                 <h3>TV Shows</h3>
                 <h3>Genres</h3>
-                <h3>Trending</h3>
+                <h3 onClick={props.getTrending}>Trending</h3>
             </div>
             <div className="sign-in">
                 <button className="sign-in-button">Sign In</button>

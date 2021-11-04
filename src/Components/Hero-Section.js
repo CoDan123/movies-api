@@ -13,7 +13,7 @@ const HeroSection = (props) => {
                     <h1>Find your favorite movies, TV shows and more.</h1>
                     <form>
                         <input type="text" placeholder="Search here..."/>
-                        <button type="submit">Search</button>
+                        <button>Search</button>
                     </form>
                 </div>
             </div>
