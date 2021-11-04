@@ -4,3 +4,10 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
+.results-container {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

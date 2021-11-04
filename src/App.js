@@ -25,9 +25,11 @@ const getTrending = async () => {
         <Header getTrending={getTrending}/>
         {
         movies.length === 0? 
-        <HeroSection /> : movies.map((movie, index) => (
-          <SearchResults movieTitle={movie.title}/>
-        ))
+        <HeroSection /> : 
+        <div className="results-container">
+             {movies.map((movie, index) => (
+             <SearchResults movieTitle={movie.title}/>))}
+        </div>
         }
         <Footer/>
       </div>
