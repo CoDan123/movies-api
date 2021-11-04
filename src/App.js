@@ -24,12 +24,14 @@ const getTrending = async () => {
       <div className="App">
         <Header getTrending={getTrending}/>
         {
-        movies.length === 0? 
-        <HeroSection /> : 
-        <div className="results-container">
-             {movies.map((movie, index) => (
-             <SearchResults movieTitle={movie.title}/>))}
-        </div>
+          movies.length === 0? 
+          <HeroSection /> : 
+          <div className="results-container">
+            {
+              movies.map((movie) => (
+              movie.title? <SearchResults movieTitle={movie.title}/> : ''))
+            }
+          </div>
         }
         <Footer/>
       </div>
