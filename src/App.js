@@ -17,6 +17,7 @@ const getTrending = async () => {
   const response = await fetch('https://api.themoviedb.org/3/trending/all/day?api_key=087e6e53b047b687bcd13eb7475121ab');
   const data = await response.json();
   setMovies(data.results);
+  console.log(data.results);
 }
 
     return (
@@ -24,8 +25,8 @@ const getTrending = async () => {
         <Header getTrending={getTrending}/>
         {
         movies.length === 0? 
-        <HeroSection /> : movies.map(movie => (
-          <SearchResults/>
+        <HeroSection /> : movies.map((movie, index) => (
+          <SearchResults movieTitle={movie.title}/>
         ))
         }
         <Footer/>
