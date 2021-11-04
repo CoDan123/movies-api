@@ -8,7 +8,6 @@ import SearchResults from './SearchResults'
 
 
 
-  
 function App() { 
 
   const [movies, setMovies] = useState([]);
@@ -25,8 +24,9 @@ const getTrending = async () => {
         <Header getTrending={getTrending}/>
         {
         movies.length === 0? 
-        <HeroSection /> : 
-        <SearchResults/>
+        <HeroSection /> : movies.map(movie => (
+          <SearchResults/>
+        ))
         }
         <Footer/>
       </div>
