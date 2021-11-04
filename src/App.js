@@ -4,7 +4,7 @@ import Header from './Components/Header';
 import HeroSection from './Components/Hero-Section';
 import Footer from "./Components/Footer";
 import Movie from './Components/Movie';
-import SearchResults from './SearchResults'
+import SearchResults from './Components/SearchResults'
 
 
 
