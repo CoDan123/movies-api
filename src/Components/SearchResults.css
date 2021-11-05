@@ -5,5 +5,10 @@
     overflow: hidden;
     height: 18rem;
     width: 10rem;
-    font-size: .5rem;
+    font-size: .6rem;
+}
+
+.search-results-display h1 {
+    text-align: center;
+    color: #fff;
 }
