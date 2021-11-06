@@ -6,12 +6,14 @@
 }
 
 .results-container {
-    background-color: rgb(94, 94, 94);
+    background-color: black;
+    border-top: 2px solid rgba(255, 255, 255, 0.623);
+    border-bottom: 2px solid #e50913;
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
 }

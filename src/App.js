@@ -11,6 +11,7 @@ import SearchResults from './Components/SearchResults'
 function App() { 
 
   const [movies, setMovies] = useState([]);
+  const [search, setSearch] = useState('');
   
   const base_poster_path = "https://image.tmdb.org/t/p/w500";
 
@@ -19,6 +20,10 @@ const getTrending = async () => {
   const data = await response.json();
   setMovies(data.results);
   console.log(data.results);
+}
+
+const handleSearch = async () => {
+
 }
 
     return (
