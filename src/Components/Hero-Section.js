@@ -11,10 +11,10 @@ const HeroSection = (props) => {
             <div className="hero-search-overlay">
                 <div className="search-box">
                     <h1>Find your favorite movies, TV shows and more.</h1>
-                    <form>
-                        <input type="text" placeholder="Search here..."/>
-                        <button>Search</button>
-                    </form>
+                    <div className="form">
+                        <input onChange={props.updateSearch} type="text" placeholder="Search here..."/>
+                        <button onClick={props.handleSearch}>Search</button>
+                    </div>
                 </div>
             </div>
         </div>
