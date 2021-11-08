@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-.trending-container {
+.trending-container, .search-results-container {
     background-color: black;
     border-top: 2px solid rgba(255, 255, 255, 0.623);
     border-bottom: 2px solid #e50913;

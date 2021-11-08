@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import HeroSection from './Components/Hero-Section';
 import Footer from "./Components/Footer";
 import Movie from './Components/Movie';
+import SearchResults from "./Components/SearchResults";
 import TrendingResults from './Components/TrendingResults';
 
 
@@ -30,20 +31,36 @@ const updateSearch = (e) => {
 const handleSearch = async () => {
   const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=087e6e53b047b687bcd13eb7475121ab&query=${search}`);
   const data = await response.json();
-  setDisplayType('searchResults')
-  console.log(data);
+  setMovies(data.results);
+  setDisplayType('searchResults');
+  console.log(data.results);
 }
 
 const display = () => {
   if(displayType === 'home' || displayType === undefined) {
-    return <HeroSection updateSearch={updateSearch} handleSearch={handleSearch}/>
+    return <HeroSection 
+    updateSearch={updateSearch} 
+    handleSearch={handleSearch}/>
   }else if (displayType === 'searchResults'){
-    <SearchResults/>
+    return <div className="search-results-container">
+      {
+        movies.map((movie) => (
+          <SearchResults 
+          movieTitle={movie.title} 
+          basePosterPath={base_poster_path} 
+          posterPath={movie.poster_path}/>)
+        )
+      }
+    </div>
   } else if (displayType === 'trending'){
     return <div className="trending-container">
     {
       movies.map((movie) => (
-      movie.title? <TrendingResults movieTitle={movie.title} basePosterPath={base_poster_path} posterPath={movie.poster_path}/> : ''))
+        movie.title? <TrendingResults 
+        movieTitle={movie.title} 
+        basePosterPath={base_poster_path} 
+        posterPath={movie.poster_path}/> : '')
+      )
     }
   </div>
   }
