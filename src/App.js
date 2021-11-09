@@ -36,6 +36,10 @@ const handleSearch = async () => {
   console.log(data.results);
 }
 
+const logoHome = () => {
+  setDisplayType('home');
+}
+
 const display = () => {
   if(displayType === 'home' || displayType === undefined) {
     return <HeroSection 
@@ -68,7 +72,7 @@ const display = () => {
 
     return (
       <div className="App">
-        <Header getTrending={getTrending}/>
+        <Header logoHome={logoHome} getTrending={getTrending}/>
         {display()}
         <Footer/>
       </div>

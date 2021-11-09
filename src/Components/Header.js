@@ -4,7 +4,7 @@ import './Header.css';
 const Header = (props) => {
     return (
         <div className='header-section'>
-            <div className="logo-container">
+            <div className="logo-container" onClick={props.logoHome}>
                 <h1><i class="fas fa-film"></i>Movies</h1>
             </div>
             <div className="navigation">
