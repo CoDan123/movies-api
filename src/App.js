@@ -24,6 +24,12 @@ const getTrending = async () => {
   setDisplayType('trending');
 }
 
+const getGenre = async () => {
+  const response = await fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=087e6e53b047b687bcd13eb7475121ab&language=en-US')
+  const data = await response.json();
+  console.log(data);
+}
+
 const updateSearch = (e) => {
   setSearch(e.target.value);
 }
@@ -46,10 +52,10 @@ const display = () => {
     return <div className="search-results-container">
       {
         movies.map((movie) => (
-          <SearchResults 
+          movie.poster_path? <SearchResults 
           movieTitle={movie.title} 
           basePosterPath={base_poster_path} 
-          posterPath={movie.poster_path}/>)
+          posterPath={movie.poster_path}/> : '')
         )
       }
     </div>

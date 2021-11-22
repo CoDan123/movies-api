@@ -6,14 +6,12 @@
 }
 
 .trending-container, .search-results-container {
-    background-color: black;
-    border-top: 2px solid rgba(255, 255, 255, 0.623);
-    border-bottom: 2px solid #e50913;
+    background-color: rgb(56, 56, 56);
     display: flex;
     flex-direction: row;
     flex-grow: 1;
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
-    overflow: hidden;
+    
 }
