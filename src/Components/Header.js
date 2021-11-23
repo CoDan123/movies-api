@@ -10,7 +10,7 @@ const Header = (props) => {
             <div className="navigation">
                 <h3>Movies</h3>
                 <h3>TV Shows</h3>
-                <h3>Genres</h3>
+                <h3 onClick={props.getGenre}>Genres</h3>
                 <h3 onClick={props.getTrending}>Trending</h3>
             </div>
             <div className="sign-in">
