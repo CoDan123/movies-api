@@ -76,12 +76,11 @@ const display = () => {
   } else if (displayType === 'genres'){
     return <div className='genres-container'>
       {
-        // movies.map((movie) => (
-        //   movie.title? <GenresResults
-        //   movieTitle={movie.title}
-        //   basePosterPath={base_poster_path}
-        //   posterPath={movie.poster_path}/> : '')
-        // )
+        movies.map((movie) => (
+          movie.name? <GenresResults
+          movieName={movie.name}
+         /> : '')
+        )
       }
     </div>
   }

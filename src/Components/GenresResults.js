@@ -3,8 +3,8 @@ import "./GenresResults.css";
 
 const GenresResults = (props) => {
     return (
-        <div className='Genres-results-display'>
-            <img src={props.basePosterPath + props.PosterPath} alt="" />
+        <div className='genres-results-display'>
+            {props.movieName}
         </div>
     )
 }
