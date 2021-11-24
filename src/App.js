@@ -76,9 +76,9 @@ const display = () => {
   } else if (displayType === 'genres'){
     return <div className='genres-container'>
       {
-        movies.map((movie) => (
-          movie.name? <GenresResults
-          movieName={movie.name}
+        movies.map((genre) => (
+          genre.name? <GenresResults
+          genreName={genre.name}
          /> : '')
         )
       }
