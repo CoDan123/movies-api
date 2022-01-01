@@ -1,4 +1,4 @@
-.search-results-display {
+.movie-card {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -12,6 +12,6 @@
     margin-left: .5rem;
 }
 
-.search-results-display img {
+.movie-card img {
     height: 100%;
 }

@@ -3,7 +3,7 @@ import './SearchResults.css';
 
 const SearchResults = (props) => {
     return (
-        <div className="search-results-display">
+        <div className="movie-card">
             <img src={props.basePosterPath + props.posterPath} alt="" />
         </div>
     )
