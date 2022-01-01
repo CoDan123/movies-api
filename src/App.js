@@ -24,14 +24,6 @@ const getTrending = async () => {
   setDisplayType('trending');
 }
 
-const getGenre = async () => {
-  const response = await fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=087e6e53b047b687bcd13eb7475121ab&language=en-US');
-  const data = await response.json();
-  setMovies(data.genres);
-  setDisplayType('genres');
-  console.log(data.genres);
-}
-
 const updateSearch = (e) => {
   setSearch(e.target.value);
 }
@@ -77,7 +69,7 @@ const display = () => {
 
     return (
       <div className="App">
-        <Header logoToHome={() => setDisplayType('home')} getTrending={getTrending} getGenre={getGenre}/>
+        <Header logoToHome={() => setDisplayType('home')} getTrending={getTrending}/>
         {display()}
         <Footer/>
       </div>
