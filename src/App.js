@@ -3,7 +3,6 @@ import "./App.css";
 import Header from './Components/Header';
 import HeroSection from './Components/Hero-Section';
 import Footer from "./Components/Footer";
-import Movie from './Components/Movie';
 import SearchResults from "./Components/SearchResults";
 import TrendingResults from './Components/TrendingResults';
 
