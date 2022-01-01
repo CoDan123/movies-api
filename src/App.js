@@ -73,17 +73,7 @@ const display = () => {
       )
     }
   </div>
-  } else if (displayType === 'genres'){
-    return <div className='genres-container'>
-      {
-        movies.map((genre) => (
-          genre.name? <GenresResults
-          genreName={genre.name}
-         /> : '')
-        )
-      }
-    </div>
-  }
+  } 
 }
 
     return (
