@@ -6,7 +6,6 @@ import Footer from "./Components/Footer";
 import Movie from './Components/Movie';
 import SearchResults from "./Components/SearchResults";
 import TrendingResults from './Components/TrendingResults';
-import GenresResults from "./Components/GenresResults";
 
 
 
