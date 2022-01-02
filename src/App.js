@@ -46,7 +46,7 @@ const display = () => {
       {
         movies.map((movie) => (
           movie.poster_path? <SearchResults
-          overview={movie.overview} 
+          voteAverage={movie.vote_average} 
           movieTitle={movie.title} 
           basePosterPath={base_poster_path} 
           posterPath={movie.poster_path}/> : '')
@@ -58,7 +58,7 @@ const display = () => {
     {
       movies.map((movie) => (
         movie.title? <TrendingResults 
-        overview={movie.overview}
+        voteAverage={movie.vote_average} 
         movieTitle={movie.title} 
         basePosterPath={base_poster_path} 
         posterPath={movie.poster_path}/> : '')
