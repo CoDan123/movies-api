@@ -13,14 +13,6 @@
     flex-wrap: wrap;
     gap: 10px;
     align-items: flex-start;
-    
+    padding-bottom: 25px;
 }
-
-.genres-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: auto;
-}
-
 
