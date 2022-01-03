@@ -10,7 +10,9 @@ const SearchResults = (props) => {
                     <h2>{props.movieTitle}</h2>
                     <h3>{props.voteAverage}/10</h3>
                 </div>
-                <button className="view-button">View</button>
+                <div className="view-button-container">
+                    <button>View</button>
+                </div>
             </div>
         </div>
     )
