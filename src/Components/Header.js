@@ -9,7 +9,7 @@ const Header = (props) => {
             </div>
 
             <div className="navigation">
-            <h3 onClick={props.getTrending}>Trending</h3>
+            <h3 onClick={props.getTrending}>Trending <i className="fas fa-fire"></i></h3>
             </div>
             
             <div className="sign-in">

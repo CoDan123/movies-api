@@ -5,10 +5,7 @@ import HeroSection from './Components/Hero-Section';
 import SearchResults from "./Components/SearchResults";
 import TrendingResults from './Components/TrendingResults';
 
-
-
 function App() { 
-
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
   const [displayType, setDisplayType] = useState('home');
