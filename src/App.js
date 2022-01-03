@@ -2,7 +2,6 @@ import react, {useState} from "react";
 import "./App.css";
 import Header from './Components/Header';
 import HeroSection from './Components/Hero-Section';
-import Footer from "./Components/Footer";
 import SearchResults from "./Components/SearchResults";
 import TrendingResults from './Components/TrendingResults';
 
@@ -74,7 +73,6 @@ const display = () => {
       <div className="App">
         <Header logoToHome={() => setDisplayType('home')} getTrending={getTrending}/>
         {display()}
-        <Footer/>
       </div>
     );
 }
