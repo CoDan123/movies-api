@@ -10,7 +10,7 @@
     border-radius: 4px;
     margin-top: 1rem;
     margin-left: .5rem;
-    color: wheat;
+    animation: movie-card-load 900ms;
 }
 
 .movie-card img {
@@ -39,13 +39,20 @@
   cursor: pointer;
 }
 
-.movie-over h2 {
+.movie-over h2, .movie-over h3 {
   font-size: 18px;
 }
 
-.movie-over h3 {
-  font-size: 18px;
+@keyframes movie-card-load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
+
 
 
 

@@ -57,7 +57,8 @@ const display = () => {
     return <div className="trending-container">
     {
       movies.map((movie) => (
-        movie.title? <TrendingResults 
+        movie.title? <TrendingResults
+        key={Math.random()}
         voteAverage={movie.vote_average} 
         movieTitle={movie.title} 
         basePosterPath={base_poster_path} 
