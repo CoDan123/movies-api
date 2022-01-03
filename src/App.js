@@ -46,6 +46,7 @@ const display = () => {
       {
         movies.map((movie) => (
           movie.poster_path? <SearchResults
+          key={Math.random()}
           voteAverage={movie.vote_average} 
           movieTitle={movie.title} 
           basePosterPath={base_poster_path} 
