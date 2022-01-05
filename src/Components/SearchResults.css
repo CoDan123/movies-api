@@ -35,7 +35,6 @@
 
 .movie-over:hover {
   opacity: 1;
-  cursor: pointer;
 }
 
 .movie-over h2, .movie-over h3 {
@@ -69,6 +68,11 @@
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
+.view-button-container button:hover {
+  cursor: pointer;
+}
+
 
 
 
