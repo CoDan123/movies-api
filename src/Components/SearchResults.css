@@ -61,12 +61,12 @@
   height: 1.5rem;
   width: 6rem;
   font-size: 15px;
-  font-weight: 550;
+  font-weight: 555;
   background-color: #e50913;
   color: #fff;
   border: none;
   border-radius: 8px;
-  margin-bottom: 20px;
+  margin-bottom: 2px;
 }
 
 .view-button-container button:hover {
