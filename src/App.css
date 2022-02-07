@@ -1,8 +1,17 @@
+body {
+    width: 100vw;
+}
+
+#root {
+    width: 100%;
+}
+
 .App {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
 }
 
 .trending-container, .search-results-container {
