@@ -11,7 +11,7 @@ const SearchResultsCards = (props) => {
                     <h3>{props.voteAverage}/10</h3>
                 </div>
                 <div className="view-button-container">
-                    <button>View</button>
+                    <button onClick={props.handleViewClick}>View</button>
                 </div>
             </div>
         </div>

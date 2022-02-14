@@ -76,7 +76,7 @@
 }
 
 .search-box button {
-    flex-grow: 1;
+   padding: 0 25px 0 25px;
     height: 52px;
     width: max-content;
     border: none;

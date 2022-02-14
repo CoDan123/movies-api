@@ -31,6 +31,9 @@ const handleSearch = async () => {
   console.log(data.results);
 }
 
+const handleViewClick = () => {
+  setDisplayType('movieInfoPage');
+}
 
 const display = () => {
   if(displayType === 'home' || displayType === undefined) {
@@ -45,6 +48,7 @@ const display = () => {
           movies.map((movie) => (
             movie.poster_path? <SearchResultsCards
             key={Math.random()}
+            handleViewClick={handleViewClick}
             voteAverage={movie.vote_average} 
             movieTitle={movie.title} 
             basePosterPath={base_poster_path} 
@@ -52,23 +56,23 @@ const display = () => {
           )
         }
       </div>
-   </div>
+    </div>
   } else if (displayType === 'trending'){
     return <div className="trending-cards-outer">
       <p>Showing results for "Trending"</p>
-    <div className="trending-cards-container">
-    {
-      movies.map((movie) => (
-        movie.title? <TrendingResultsCards
-        key={Math.random()}
-        voteAverage={movie.vote_average} 
-        movieTitle={movie.title} 
-        basePosterPath={base_poster_path} 
-        posterPath={movie.poster_path}/> : '')
-      )
-    }
+      <div className="trending-cards-container">
+        {
+          movies.map((movie) => (
+            movie.title? <TrendingResultsCards
+            key={Math.random()}
+            voteAverage={movie.vote_average} 
+            movieTitle={movie.title} 
+            basePosterPath={base_poster_path} 
+            posterPath={movie.poster_path}/> : '')
+          )
+        }    
+      </div>
     </div>
-  </div>
   } 
 }
 
