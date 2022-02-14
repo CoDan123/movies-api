@@ -2,8 +2,8 @@ import react, {useState} from "react";
 import "./App.css";
 import Header from './Components/Header';
 import HeroSection from './Components/Hero-Section';
-import SearchResults from "./Components/SearchResults";
-import TrendingResults from './Components/TrendingResults';
+import SearchResultsCards from "./Components/SearchResultsCards";
+import TrendingResultsCards from './Components/TrendingResultsCards';
 
 function App() { 
   const [movies, setMovies] = useState([]);
@@ -38,23 +38,28 @@ const display = () => {
     updateSearch={updateSearch} 
     handleSearch={handleSearch}/>
   }else if (displayType === 'searchResults'){
-    return <div className="search-results-container">
-      {
-        movies.map((movie) => (
-          movie.poster_path? <SearchResults
-          key={Math.random()}
-          voteAverage={movie.vote_average} 
-          movieTitle={movie.title} 
-          basePosterPath={base_poster_path} 
-          posterPath={movie.poster_path}/> : '')
-        )
-      }
-    </div>
+    return <div className="search-cards-outer">
+      <p>Showing results for "{search}"</p>
+      <div className="search-cards-container">
+        {
+          movies.map((movie) => (
+            movie.poster_path? <SearchResultsCards
+            key={Math.random()}
+            voteAverage={movie.vote_average} 
+            movieTitle={movie.title} 
+            basePosterPath={base_poster_path} 
+            posterPath={movie.poster_path}/> : '')
+          )
+        }
+      </div>
+   </div>
   } else if (displayType === 'trending'){
-    return <div className="trending-container">
+    return <div className="trending-cards-outer">
+      <p>Showing results for "Trending"</p>
+    <div className="trending-cards-container">
     {
       movies.map((movie) => (
-        movie.title? <TrendingResults
+        movie.title? <TrendingResultsCards
         key={Math.random()}
         voteAverage={movie.vote_average} 
         movieTitle={movie.title} 
@@ -62,6 +67,7 @@ const display = () => {
         posterPath={movie.poster_path}/> : '')
       )
     }
+    </div>
   </div>
   } 
 }

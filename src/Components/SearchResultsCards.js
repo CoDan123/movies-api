@@ -1,6 +1,7 @@
 import React from "react";
+import './SearchResultsCards.css';
 
-const TrendingResults = (props) => {
+const SearchResultsCards = (props) => {
     return (
         <div className="movie-card">
             <img src={props.basePosterPath + props.posterPath} alt="" />
@@ -17,4 +18,4 @@ const TrendingResults = (props) => {
     )
 }
 
-export default TrendingResults;
+export default SearchResultsCards;
