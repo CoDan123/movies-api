@@ -1,5 +1,6 @@
 body {
-    position: fixed;
+   
+    position: absolute;
     width: 100vw;
 }
 
@@ -8,11 +9,11 @@ body {
 }
 
 .App {
-    
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
 }
 
 .trending-container, .search-results-container {
@@ -20,8 +21,9 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: 100%;
     gap: 10px;
-    justify-content: center;
-    padding-bottom: 25px;
+    padding-left: auto;
+    padding-right: auto;
 }
 

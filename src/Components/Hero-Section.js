@@ -4,10 +4,6 @@ import './Hero-Section.css';
 const HeroSection = (props) => {
     return (
         <div className="background">
-            <div className="hero-image">
-                <div className="top-gradient"></div>
-                <div className="bottom-gradient"></div>
-            </div>
             <div className="hero-search-overlay">
                 <div className="search-box">
                     <h1>Find your favorite movies, TV shows and more.</h1>
@@ -16,6 +12,8 @@ const HeroSection = (props) => {
                         <button onClick={props.handleSearch}>Search</button>
                     </div>
                 </div>
+            </div>
+            <div className="hero-image">
             </div>
         </div>
     )
