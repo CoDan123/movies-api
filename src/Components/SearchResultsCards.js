@@ -11,7 +11,7 @@ const SearchResultsCards = (props) => {
                     <h3>{props.voteAverage}/10</h3>
                 </div>
                 <div className="view-button-container">
-                    <button onClick={props.setDisplayType('movieInfoPage')}>View</button>
+                    <button onClick={() => props.setDisplayType('home')}>View</button>
                 </div>
             </div>
         </div>
