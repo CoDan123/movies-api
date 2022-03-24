@@ -9,6 +9,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
   const [displayType, setDisplayType] = useState('home');
+  const [movieInfoPage, setMovieInfoPage] = useState('');
   
   const base_poster_path = "https://image.tmdb.org/t/p/w500";
 
@@ -68,6 +69,15 @@ const display = () => {
             basePosterPath={base_poster_path} 
             posterPath={movie.poster_path}/> : '')
           )
+        }    
+      </div>
+    </div>
+  } else if (displayType === 'movieInfoPage'){
+    return <div className="movie-info-page">
+      <p>Showing results for "Trending"</p>
+      <div className="movie-info-page-container">
+        {
+          
         }    
       </div>
     </div>
