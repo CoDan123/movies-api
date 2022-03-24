@@ -31,10 +31,6 @@ const handleSearch = async () => {
   console.log(data.results);
 }
 
-const handleViewClick = () => {
-  setDisplayType('movieInfoPage');
-}
-
 const display = () => {
   if(displayType === 'home' || displayType === undefined) {
     return <HeroSection 
@@ -48,7 +44,7 @@ const display = () => {
           movies.map((movie) => (
             movie.poster_path? <SearchResultsCards
             key={Math.random()}
-            handleViewClick={handleViewClick}
+            handleViewClick={setDisplayType}
             voteAverage={movie.vote_average} 
             movieTitle={movie.title} 
             basePosterPath={base_poster_path} 
