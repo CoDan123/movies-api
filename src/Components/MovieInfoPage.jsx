@@ -8,8 +8,22 @@ const MovieInfoPage = (props) => {
             <img src={props.basePosterPath + props.movieInfoPage.poster_path} alt="" />
             </div>
             <div className="movie-info-box">
-                <h1>{props.movieInfoPage.title}({props.movieInfoPage.release_date.substr(0, 4)})</h1>
-                <h3>{props.movieInfoPage.vote_average}{props.movieInfoPage.genre_ids[0]}</h3>
+                <h1>{props.movieInfoPage.title} ({props.movieInfoPage.release_date.substr(0, 4)})</h1>
+
+                    <div className="rating-date-language">
+                        {props.movieInfoPage.vote_average}/10 ({props.movieInfoPage.vote_count} votes)
+                        <div className="circle-container">
+                            <div className="circle">
+                            </div>
+                        </div>
+                        Release date: {props.movieInfoPage.release_date}
+                        <div className="circle-container">
+                            <div className="circle">
+                            </div>
+                        </div>
+                        Language: {props.movieInfoPage.original_language.toUpperCase()}
+                    </div>
+               
                 <div className="overview-title-and-text">
                     <h4>Overview</h4>
                     <p>{props.movieInfoPage.overview}</p>
