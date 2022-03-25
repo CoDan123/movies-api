@@ -84,12 +84,12 @@ const display = () => {
     return <div className="movie-info-page">
       <p>Showing results for "Movie-info"</p>
       <div className="movie-info-page-container">
-        {
+        
           <MovieInfoPage 
           setMovieInfoPage={setMovieInfoPage}
           movieInfoPage={movieInfoPage}
           />
-        }    
+           
       </div>
     </div>
   } 
