@@ -9,9 +9,11 @@ const MovieInfoPage = (props) => {
             </div>
             <div className="movie-info-box">
                 <h1>{props.movieInfoPage.title}({props.movieInfoPage.release_date})</h1>
-                <h3>{props.movieInfoPage.vote_average}</h3>
-                <h4>Overview</h4>
-                <h5>{props.movieInfoPage.overview}</h5>
+                <h3>{props.movieInfoPage.vote_average}{props.movieInfoPage.genre_ids[0]}</h3>
+                <div className="overview-title-and-text">
+                    <h4>Overview</h4>
+                    <p>{props.movieInfoPage.overview}</p>
+                </div>
             </div>
            {console.log(props.movieInfoPage)}
         </div>

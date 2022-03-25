@@ -82,7 +82,7 @@ const display = () => {
     </div>
   } else if (displayType === 'movieInfoPage'){
     return <div className="movie-info-page">
-      
+        <div className="back-to-search">Back to search</div>
           <MovieInfoPage 
           setMovieInfoPage={setMovieInfoPage}
           movieInfoPage={movieInfoPage}
