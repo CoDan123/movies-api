@@ -1,0 +1,26 @@
+.movie-info-page {
+    height: 100%;
+    width: 100%;
+}
+
+.movie-info-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-info-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 50%;
+}
+
+ .img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
