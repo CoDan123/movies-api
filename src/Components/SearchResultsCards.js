@@ -13,7 +13,7 @@ const SearchResultsCards = (props) => {
                 <div className="view-button-container">
                     <button onClick={() => {
                         props.setDisplayType('movieInfoPage')
-                        
+                        props.setMovieInfoPage(props.movieData)
                     }}>View</button>
                 </div>
             </div>

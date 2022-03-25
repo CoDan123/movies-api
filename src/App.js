@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import HeroSection from './Components/Hero-Section';
 import SearchResultsCards from "./Components/SearchResultsCards";
 import TrendingResultsCards from './Components/TrendingResultsCards';
+import MovieInfoPage from "./Components/MovieInfoPage";
 
 function App() { 
   const [movies, setMovies] = useState([]);
@@ -38,7 +39,8 @@ const display = () => {
   if(displayType === 'home' || displayType === undefined) {
     return <HeroSection 
     updateSearch={updateSearch} 
-    handleSearch={handleSearch}/>
+    handleSearch={handleSearch}
+    />
   }else if (displayType === 'searchResults'){
     return <div className="search-cards-outer">
       <p>Showing results for "{search}"</p>
@@ -48,10 +50,14 @@ const display = () => {
             movie.poster_path? <SearchResultsCards
             key={Math.random()}
             setDisplayType={setDisplayType}
+            setMovieInfoPage={setMovieInfoPage}
+            movieData={movie}
             voteAverage={movie.vote_average} 
             movieTitle={movie.title} 
             basePosterPath={base_poster_path} 
-            posterPath={movie.poster_path}/> : '')
+            posterPath={movie.poster_path}
+            />
+            : '')
           )
         }
       </div>
@@ -67,17 +73,22 @@ const display = () => {
             voteAverage={movie.vote_average} 
             movieTitle={movie.title} 
             basePosterPath={base_poster_path} 
-            posterPath={movie.poster_path}/> : '')
+            posterPath={movie.poster_path}
+            /> 
+            : '')
           )
         }    
       </div>
     </div>
   } else if (displayType === 'movieInfoPage'){
     return <div className="movie-info-page">
-      <p>Showing results for "Trending"</p>
+      <p>Showing results for "Movie-info"</p>
       <div className="movie-info-page-container">
         {
-          
+          <MovieInfoPage 
+          setMovieInfoPage={setMovieInfoPage}
+          movieInfoPage={movieInfoPage}
+          />
         }    
       </div>
     </div>
