@@ -11,6 +11,11 @@ const Header = (props) => {
             <div className="navigation">
                 <h3 onClick={props.getTrending}>Trending <i className="fas fa-fire"></i></h3>
             </div>
+
+            <div className="form">
+                        <input onChange={props.updateSearch} type="text" placeholder="Search here..."/>
+                        <button onClick={props.handleSearch}>Search</button>
+                </div>
             
             <div className="sign-in">
                 <button className="sign-in-button">Sign In</button>

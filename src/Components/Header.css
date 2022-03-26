@@ -12,6 +12,8 @@
 }
 
 .logo-container h1 {
+    display: flex;
+    align-items: center;
     font-family: 'Oswald', sans-serif;
     color: #e50913;
     margin-bottom: 40px;
@@ -33,6 +35,8 @@
 }
 
 .navigation h3 {
+    display: flex;
+    align-items: center;
     color: white;
     font-weight: 700;
     padding: 15px;
@@ -90,6 +94,7 @@
 }
 
 .fa-fire {
+    padding-left: 5px;
     background: -webkit-linear-gradient( rgb(255, 208, 0),rgb(255, 145, 0), rgb(255, 0, 0));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
