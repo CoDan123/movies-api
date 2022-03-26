@@ -11,6 +11,7 @@ function App() {
   const [search, setSearch] = useState('');
   const [displayType, setDisplayType] = useState('home');
   const [movieInfoPage, setMovieInfoPage] = useState('');
+  const [goBack,setGoBack] = useState('');
   
   const base_poster_path = "https://image.tmdb.org/t/p/w500";
 
@@ -19,6 +20,7 @@ const getTrending = async () => {
   const data = await response.json();
   setMovies(data.results);
   setDisplayType('trending');
+  setGoBack('trending')
 }
 
 const updateSearch = (e) => {
@@ -30,6 +32,7 @@ const handleSearch = async () => {
   const data = await response.json();
   setMovies(data.results);
   setDisplayType('searchResults');
+  setGoBack('searchResults')
   console.log(data.results);
 }
 
@@ -82,7 +85,7 @@ const display = () => {
     </div>
   } else if (displayType === 'movieInfoPage'){
     return <div className="movie-info-page">
-        <div className="back-to-search">Back to search</div>
+        <div className="back-to-search" onClick={() => {setDisplayType(goBack)}}>Back to search</div>
           <MovieInfoPage 
           setMovieInfoPage={setMovieInfoPage}
           movieInfoPage={movieInfoPage}
