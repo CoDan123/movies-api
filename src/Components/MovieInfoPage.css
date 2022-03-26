@@ -20,10 +20,24 @@
     color: white;
 }
 
+.movie-info-box h1 {
+    margin: 0;
+}
+
 .rating-date-language {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.overview-title-and-text h4 {
+    font-size: 25px;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.overview-title-and-text p {
+    margin-top: 8px;
 }
 
 .circle {
