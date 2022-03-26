@@ -73,6 +73,8 @@ const display = () => {
           movies.map((movie) => (
             movie.title? <TrendingResultsCards
             key={Math.random()}
+            setDisplayType={setDisplayType}
+            setMovieInfoPage={setMovieInfoPage}
             voteAverage={movie.vote_average} 
             movieTitle={movie.title} 
             basePosterPath={base_poster_path} 
@@ -98,7 +100,7 @@ const display = () => {
 
     return (
       <div className="App">
-        <Header logoToHome={() => setDisplayType('home')} getTrending={getTrending}/>
+        <Header logoToHome={() => setDisplayType('home')} getTrending={getTrending} displayType={displayType}/>
         {display()}
       </div>
     );

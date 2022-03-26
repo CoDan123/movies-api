@@ -11,6 +11,7 @@
     background-size: cover; 
     display: flex;
     flex-direction: row;
+    animation: transitionIn 500ms;
 }
 
 .movie-info-box {
@@ -26,10 +27,15 @@
     margin: 0;
 }
 
+h1 span {
+    font-weight: 400;
+}
+
 .rating-date-language {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 20px;
 }
 
 .overview-title-and-text h4 {
@@ -90,6 +96,17 @@ img {
 
     to {
         transform: translateY(0)
+    }
+
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0.1;
+    }
+
+    to {
+        opacity: 1;
     }
 
 }

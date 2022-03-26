@@ -100,3 +100,7 @@
   -webkit-text-fill-color: transparent;
 }
 
+.hidden-form {
+    display: none;
+}
+

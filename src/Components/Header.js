@@ -12,7 +12,7 @@ const Header = (props) => {
                 <h3 onClick={props.getTrending}>Trending <i className="fas fa-fire"></i></h3>
             </div>
 
-            <div className="form">
+            <div className={props.displayType !== 'home'? 'form' : 'hidden-form'}>
                         <input onChange={props.updateSearch} type="text" placeholder="Search here..."/>
                         <button onClick={props.handleSearch}>Search</button>
                 </div>
