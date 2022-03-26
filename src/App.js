@@ -75,6 +75,7 @@ const display = () => {
             key={Math.random()}
             setDisplayType={setDisplayType}
             setMovieInfoPage={setMovieInfoPage}
+            movieData={movie}
             voteAverage={movie.vote_average} 
             movieTitle={movie.title} 
             basePosterPath={base_poster_path} 
