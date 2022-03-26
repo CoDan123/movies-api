@@ -1,6 +1,7 @@
 .movie-info-page {
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .movie-info-container {
@@ -18,6 +19,7 @@
     justify-content: center;
     width: 50%;
     color: white;
+    animation: slideInRight 1s;
 }
 
 .movie-info-box h1 {
@@ -53,7 +55,7 @@
     align-items: center;
     height: 100%;
     width: 45%;
-    
+    animation: slideInLeft 1s; 
 }
 
 img {
@@ -68,6 +70,28 @@ img {
     height: 12%;
     position: absolute;
     color: white;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-550px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(550px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+
 }
 
 
