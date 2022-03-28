@@ -13,15 +13,9 @@ const Header = (props) => {
             </div>
 
             <div className={props.displayType !== 'home'? 'form' : 'hidden-form'}>
-                        <input onChange={props.updateSearch} type="text" placeholder="Search here..."/>
+                        <input  type="text" placeholder="Search here..."/>
                         <button onClick={props.handleSearch}>Search</button>
                 </div>
-            
-            <div className="sign-in">
-                <button className="sign-in-button">Sign In</button>
-                <button className="options-button">Options<i className="fas fa-sort-down"></i></button>
-            </div>
-            
         </div>
     )
 }
