@@ -1,7 +1,11 @@
-import React from 'react';
+import {ReactChild, useState} from 'react';
 import './Header.css';
 
 const Header = (props) => {
+    const [headerSearch, setHeaderSearch] = useState('');
+
+   
+
     return (
         <div className='header-section'>
             <div className="logo-container" onClick={props.logoToHome}>
@@ -12,8 +16,8 @@ const Header = (props) => {
                 <h3 onClick={props.getTrending}>Trending <i className="fas fa-fire"></i></h3>
             </div>
 
-            <div className={props.displayType !== 'home'? 'form' : 'hidden-form'}>
-                        <input  type="text" placeholder="Search here..."/>
+            <div className={props.displayType !== 'home'? 'form has-searched' : 'hidden-form'}>
+                        <input onChange={setHeaderSearch} type="text" placeholder="Search here..."/>
                         <button onClick={props.handleSearch}>Search</button>
                 </div>
         </div>

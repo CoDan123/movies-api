@@ -30,7 +30,7 @@ body {
     align-content: flex-start;
     height: 100%;
     gap: 10px;
-    width: fit-content;
+    width: 100%;
 }
 
 .search-cards-outer p {

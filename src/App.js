@@ -101,9 +101,13 @@ const display = () => {
 
     return (
       <div className="App">
-        <Header logoToHome={() => setDisplayType('home')} getTrending={getTrending} displayType={displayType} 
+        <Header logoToHome={() => setDisplayType('home')} 
+        getTrending={getTrending} 
+        displayType={displayType} 
         updateSearch={updateSearch} 
-    handleSearch={handleSearch}/>
+        handleSearch={handleSearch}
+        setSearch={setSearch}
+        />
         {display()}
       </div>
     );
