@@ -73,14 +73,30 @@ img {
 .back-to-search {
     display: flex;
     align-items: center;
-    height: 12%;
-    position: absolute;
+    height: 10%;
     color: white;
+    animation: slideInRightSlow 1500ms;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 0 20px 0 20px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 @keyframes slideInLeft {
     from {
         transform: translateX(-550px)
+    }
+
+    to {
+        transform: translateY(0)
+    }
+
+}
+
+@keyframes slideInRightSlow {
+    from {
+        transform: translateX(2550px)
     }
 
     to {

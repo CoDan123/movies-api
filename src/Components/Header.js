@@ -3,7 +3,6 @@ import './Header.css';
 
 const Header = (props) => {
     const [headerSearch, setHeaderSearch] = useState('');
-
    
 
     return (
@@ -17,7 +16,7 @@ const Header = (props) => {
             </div>
 
             <div className={props.displayType !== 'home'? 'form has-searched' : 'hidden-form'}>
-                        <input onChange={setHeaderSearch} type="text" placeholder="Search here..."/>
+                        <input onChange={(e) => setHeaderSearch(e.target.value)} type="text" placeholder="Search here..."/>
                         <button onClick={props.handleSearch}>Search</button>
                 </div>
         </div>

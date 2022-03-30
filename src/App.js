@@ -88,11 +88,13 @@ const display = () => {
     </div>
   } else if (displayType === 'movieInfoPage'){
     return <div className="movie-info-page">
-        <div className="back-to-search" onClick={() => {setDisplayType(goBack)}}>Back to search</div>
+        
           <MovieInfoPage 
           setMovieInfoPage={setMovieInfoPage}
           movieInfoPage={movieInfoPage}
           basePosterPath={base_poster_path}
+          setDisplayType={setDisplayType}
+          goBack={goBack}
           />
            
     </div>
@@ -106,7 +108,6 @@ const display = () => {
         displayType={displayType} 
         updateSearch={updateSearch} 
         handleSearch={handleSearch}
-        setSearch={setSearch}
         />
         {display()}
       </div>
