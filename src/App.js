@@ -29,12 +29,10 @@ const updateSearch = (e) => {
 }
 
 const handleSearch = async () => {
-  const response = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=087e6e53b047b687bcd13eb7475121ab&query=${search}`);
-  const data = await response.json();
-  setMovies(data.results);
+  const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=087e6e53b047b687bcd13eb7475121ab&query=${search}`);
+  setMovies(response.data.results);
   setDisplayType('searchResults');
   setGoBack('searchResults')
-  console.log(data.results);
 }
 
 
