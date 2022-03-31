@@ -73,30 +73,31 @@ img {
 .back-to-search {
     display: flex;
     align-items: center;
-    height: 10%;
+    height: 8%;
     color: white;
-    animation: slideInRightSlow 1500ms;
+    animation: transitionIn 1000ms;
+    animation-delay: 1s;
     border: 1px solid white;
     width: fit-content;
     padding: 0 20px 0 20px;
     margin-top: 50px;
     border-radius: 5px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    font-weight: 600;
+}
+
+.back-to-search:hover {
+    cursor: pointer;
+    background-color: #e50913;
+    border: solid 1px transparent;
+    
+    transition: 500ms;
 }
 
 @keyframes slideInLeft {
     from {
         transform: translateX(-550px)
-    }
-
-    to {
-        transform: translateY(0)
-    }
-
-}
-
-@keyframes slideInRightSlow {
-    from {
-        transform: translateX(2550px)
     }
 
     to {

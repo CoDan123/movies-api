@@ -13,6 +13,7 @@ function App() {
   const [movieInfoPage, setMovieInfoPage] = useState('');
   const [goBack,setGoBack] = useState('');
   
+  //Needed for retrieving movie image
   const base_poster_path = "https://image.tmdb.org/t/p/w500";
 
 const getTrending = async () => {
@@ -108,6 +109,7 @@ const display = () => {
         displayType={displayType} 
         updateSearch={updateSearch} 
         handleSearch={handleSearch}
+        setSearch={setSearch}
         />
         {display()}
       </div>

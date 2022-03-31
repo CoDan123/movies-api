@@ -14,11 +14,6 @@ const Header = (props) => {
             <div className="navigation">
                 <h3 onClick={props.getTrending}>Trending <i className="fas fa-fire"></i></h3>
             </div>
-
-            <div className={props.displayType !== 'home'? 'form has-searched' : 'hidden-form'}>
-                        <input onChange={(e) => setHeaderSearch(e.target.value)} type="text" placeholder="Search here..."/>
-                        <button onClick={props.handleSearch}>Search</button>
-                </div>
         </div>
     )
 }

@@ -100,11 +100,3 @@
   -webkit-text-fill-color: transparent;
 }
 
-.has-searched {
-    justify-content: flex-start !important;
-}
-
-.hidden-form {
-    display: none;
-}
-

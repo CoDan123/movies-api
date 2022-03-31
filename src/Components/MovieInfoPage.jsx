@@ -28,7 +28,7 @@ const MovieInfoPage = (props) => {
                     <h4>Overview</h4>
                     <p>{props.movieInfoPage.overview}</p>
                 </div>
-
+                
                 <div className="back-to-search" onClick={() => {props.setDisplayType(props.goBack)}}>Back to search</div>
             
             </div>
