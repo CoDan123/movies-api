@@ -6,7 +6,7 @@ const HeroSection = (props) => {
         <div className="background">
             <div className="hero-search-overlay">
                 <div className="search-box">
-                    <h1>Find your favorite movies, TV shows and more.</h1>
+                    <h1>Find your favorite movies!</h1>
                 </div>
                 <div className="form">
                         <input onChange={props.updateSearch} type="text" placeholder="Search here..."/>

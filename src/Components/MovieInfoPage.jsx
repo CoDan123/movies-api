@@ -31,11 +31,10 @@ const MovieInfoPage = (props) => {
                 
                 <div className="buttons-wrapper">
                     <div className="back-to-search" onClick={() => {props.setDisplayType(props.goBack)}}>Back to search</div>
-                    <div className="view-on-tmdb" >View on TMDB</div>
+                    <a href={`https://www.themoviedb.org/movie/${props.movieInfoPage.id}?language=en-US`} target="_blank" className="view-on-tmdb">View on TMDB</a>
                 </div>
             
             </div>
-           {console.log(props.movieInfoPage.release_date)}
         </div>
     )
 }
