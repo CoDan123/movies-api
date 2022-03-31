@@ -29,7 +29,10 @@ const MovieInfoPage = (props) => {
                     <p>{props.movieInfoPage.overview}</p>
                 </div>
                 
-                <div className="back-to-search" onClick={() => {props.setDisplayType(props.goBack)}}>Back to search</div>
+                <div className="buttons-wrapper">
+                    <div className="back-to-search" onClick={() => {props.setDisplayType(props.goBack)}}>Back to search</div>
+                    <div className="view-on-tmdb" >View on TMDB</div>
+                </div>
             
             </div>
            {console.log(props.movieInfoPage.release_date)}

@@ -70,29 +70,52 @@ img {
     overflow: hidden;
 }
 
-.back-to-search {
+.buttons-wrapper {
     display: flex;
-    align-items: center;
-    height: 8%;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.back-to-search {
     color: white;
     animation: transitionIn 1000ms;
     animation-delay: 1s;
     border: 1px solid white;
     width: fit-content;
-    padding: 0 20px 0 20px;
+    padding: 20px;
     margin-top: 50px;
     border-radius: 5px;
     opacity: 0;
     animation-fill-mode: forwards;
     font-weight: 600;
+    transition: 500ms;
 }
 
 .back-to-search:hover {
     cursor: pointer;
+    background-color: rgb(83, 83, 83);
+}
+
+.view-on-tmdb {
+    color: white;
     background-color: #e50913;
-    border: solid 1px transparent;
-    
+    animation: transitionIn 1000ms;
+    animation-delay: 1s;
+    border: 1px solid #e50913;
+    width: fit-content;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    font-weight: 600;
     transition: 500ms;
+}
+
+.view-on-tmdb:hover {
+    cursor: pointer;
+    background-color: #aa0009;
+    border: 1px solid #aa0009;
 }
 
 @keyframes slideInLeft {
