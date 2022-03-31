@@ -47,7 +47,10 @@ const display = () => {
     />
   }else if (displayType === 'searchResults'){
     return <div className="search-cards-outer">
-      <p>Showing results for "{search}"</p>
+      <div className="results-and-back-btn">
+          <div onClick={() => setDisplayType('home')} className="go-back-btn">Go Back</div>
+          <p>Showing results for "{search}"</p>
+      </div>
       <div className="search-cards-container">
         {
           movies.map((movie) => (
@@ -68,7 +71,10 @@ const display = () => {
     </div>
   } else if (displayType === 'trending'){
     return <div className="trending-cards-outer">
-      <p>Showing results for "Trending"</p>
+      <div className="results-and-back-btn">
+          <div onClick={() => setDisplayType('home')} className="go-back-btn">Go Back</div>
+          <p>Showing results for "Trending"</p>
+      </div>
       <div className="trending-cards-container">
         {
           movies.map((movie) => (

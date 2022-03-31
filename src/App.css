@@ -33,16 +33,30 @@ body {
     width: 100%;
 }
 
-.search-cards-outer p {
+.results-and-back-btn {
+    display: flex;
+    align-items: center;
+    gap: 50px;
     background-color: rgba(0, 0, 0, 1);
-    color: white;
-    margin: 0;
+    color: #fff;
 }
 
-.trending-cards-outer p {
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
-    margin: 0;
+.go-back-btn {
+    color: #fff;
+    animation: transitionIn 1000ms;
+    animation-delay: 250ms;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    font-weight: 600;
+    transition: 500ms;
+}
+
+.go-back-btn:hover {
+    cursor: pointer;
+    background-color: rgb(83, 83, 83);
 }
 
 
