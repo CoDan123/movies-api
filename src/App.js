@@ -29,13 +29,12 @@ const updateSearch = (e) => {
 }
 
 const handleSearch = async () => {
-  const response = await axios.get(`https://api.themoviedb.org/3/search/movie?api_key=087e6e53b047b687bcd13eb7475121ab&query=${search}`);
-  setMovies(response.data.results);
-  setDisplayType('searchResults');
-  setGoBack('searchResults')
+  const response = await axios.get(`/.netlify/functions/getMovies?query=${search}`);
+  console.log(response)
+  // setMovies(response.data.results);
+  // setDisplayType('searchResults');
+  // setGoBack('searchResults')
 }
-
-
 
 const display = () => {
   if(displayType === 'home' || displayType === undefined) {
