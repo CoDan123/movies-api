@@ -31,9 +31,9 @@ const updateSearch = (e) => {
 const handleSearch = async () => {
   const response = await axios.get(`/.netlify/functions/getMovies?query=${search}`);
   console.log(response)
-  // setMovies(response.data.results);
-  // setDisplayType('searchResults');
-  // setGoBack('searchResults')
+  setMovies(response.data.results);
+  setDisplayType('searchResults');
+  setGoBack('searchResults')
 }
 
 const display = () => {
