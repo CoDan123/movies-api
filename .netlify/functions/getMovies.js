@@ -3,7 +3,7 @@ const axios = require('axios');
 exports.handler = async function (event, context) {
     
     const query = event.queryStringParameters.query;
-    const URL = `https://api.themoviedb.org/3/search/movie?api_key=087e6e53b047b687bcd13eb7475121ab&query=${query}`;
+    const URL = `https://api.themoviedb.org/3/search/movie?api_key=&query=${query}`;
 
     try {
         const response = await axios.get(URL);
