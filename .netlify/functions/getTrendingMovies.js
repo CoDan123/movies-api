@@ -2,10 +2,12 @@ const axios = require('axios');
 
 exports.handler = async function (event, context) {
 
-    const url = 'https://api.themoviedb.org/3/trending/all/day?api_key=087e6e53b047b687bcd13eb7475121ab';
+    const API_KEY = process.env.API_KEY;
+    const BASE_URL_TRENDING = process.env.BASE_URL_TRENDING;
+    const URL = `${BASE_URL_TRENDING}?api_key=${API_KEY}`;
 
     try {
-        const response = await axios.get(url);
+        const response = await axios.get(URL);
         return {
             statusCode: 200,
             body: JSON.stringify(response.data)
