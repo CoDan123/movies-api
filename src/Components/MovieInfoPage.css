@@ -10,17 +10,17 @@ a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
 .movie-info-page {
-    height: 100%;
+    min-height: 88vh;
     width: 100%;
     overflow-x: hidden;
 }
 
 .movie-info-container {
-    height: 100%;
+    min-height: 88vh;
+    display: flex;
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    display: flex;
     flex-direction: row;
     animation: transitionIn 500ms;
 }
@@ -29,7 +29,7 @@ a:active { text-decoration: none; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 75%;
     color: white;
     animation: slideInRight 1s;
 }
@@ -70,9 +70,9 @@ h1 span {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     width: 45%;
-    animation: slideInLeft 1s; 
+    animation: slideInLeft 1s;
+    margin: 0 25px; 
 }
 
 img {
@@ -161,5 +161,43 @@ img {
     }
 
 }
+
+@media only screen and (max-width: 1150px){
+    .movie-info-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: 100%;
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .rating-date-language {
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 25px;
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .buttons-wrapper {
+        justify-content: center;
+    }
+
+    .img-container {
+        height: 50%;
+    }
+
+    .img-container img {
+        height: 100%;
+    }
+
+    .movie-info-box {
+        min-height: 50%;
+        gap: 0;
+    }
+} 
 
 
