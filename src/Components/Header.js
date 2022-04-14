@@ -1,10 +1,7 @@
-import {ReactChild, useState} from 'react';
 import './Header.css';
 
 const Header = (props) => {
-    const [headerSearch, setHeaderSearch] = useState('');
    
-
     return (
         <div className='header-section'>
             <div className="logo-container" onClick={props.logoToHome}>

@@ -1,4 +1,3 @@
-import react from "react";
 import "./MovieInfoPage.css";
 
 const MovieInfoPage = (props) => {
@@ -31,7 +30,7 @@ const MovieInfoPage = (props) => {
                 
                 <div className="buttons-wrapper">
                     <div className="back-to-search" onClick={() => {props.setDisplayType(props.goBack)}}>Back to search</div>
-                    <a href={`https://www.themoviedb.org/movie/${props.movieInfoPage.id}?language=en-US`} target="_blank" className="view-on-tmdb">View on TMDB</a>
+                    <a href={`https://www.themoviedb.org/movie/${props.movieInfoPage.id}?language=en-US`} target="_blank" rel="noreferrer" className="view-on-tmdb">View on TMDB</a>
                 </div>
             
             </div>
