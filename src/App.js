@@ -1,4 +1,4 @@
-import react, {useState} from "react";
+import {useState} from "react";
 import "./App.css";
 import Header from './Components/Header';
 import HeroSection from './Components/Hero-Section';
